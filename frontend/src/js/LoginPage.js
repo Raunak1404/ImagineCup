@@ -23,7 +23,7 @@ const LoginPage = () => {
   const redirectToLanding = useCallback((user) => {
     const displayName = user.displayName || user.email || "User"; 
     console.log('Navigating to landing page with user:', user);
-    navigate('/landing', { state: { welcomeMessage: `Welcome, ${displayName}!` } });
+    navigate('/editor', { state: { welcomeMessage: `Welcome, ${displayName}!` } });
   }, [navigate]);
 
   useEffect(() => {

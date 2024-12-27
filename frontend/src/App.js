@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import './App.css';
 import LoginPage from './js/LoginPage';
-import LandingPage from './js/LandingPage'; 
+import Editor from './js/Editor'; 
 import SignUpPage from './js/SignUpPage';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         {/* Define routes for LoginPage and LandingPage */}
         <Routes>
           <Route path="/" element={<LoginPage />} /> {/* Default route (LoginPage) */}
-          <Route path="/landing" element={<LandingPage />} /> {/* LandingPage route */}
+          <Route path="/editor" element={<Editor />} /> {/* LandingPage route */}
           <Route path="/signup" element={<SignUpPage />} />
         </Routes>
       </div>

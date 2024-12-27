@@ -1,0 +1,36 @@
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .editor-main {
+    display: flex;
+    height: 100%;
+  }
+  
+  .problem-description {
+    width: 40%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .code-editor {
+    width: 60%;
+    padding: 10px;
+  }
+  

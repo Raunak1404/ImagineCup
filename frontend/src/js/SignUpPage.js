@@ -47,7 +47,7 @@ const SignUpPage = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       await storeUserDetails(userCredential.user.uid);
 
-      navigate('/landing');
+      navigate('/editor');
     } catch (error) {
       console.error('Sign-up error:', error.message);
       setError(error.message);
@@ -57,7 +57,7 @@ const SignUpPage = () => {
   const handleGoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      navigate('/landing');
+      navigate('/editor');
     } catch (error) {
       console.error('Google sign-in error:', error.message);
       setError('Failed to sign in with Google. Please try again.');
