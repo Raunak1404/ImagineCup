@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import '../css/LoginPage.css';
+import '../css/LoginPage.css'; 
+import googleIcon from '../images/google.png'; 
 import { Link, useNavigate } from 'react-router-dom'; 
 import { auth, googleProvider } from './firebase'; 
 import { 
@@ -172,6 +173,7 @@ const LoginPage = () => {
                 className="google-login-button" 
                 onClick={handleGoogleLogin}
               >
+                <img src={googleIcon} alt="Google" className="google-icon" />
               </button>
               <p>
                 Don't have an account? <Link to="/signup">Sign Up</Link>

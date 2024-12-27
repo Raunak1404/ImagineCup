@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router components
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import './App.css';
-import LoginPage from './js/LoginPage'; // Import LoginPage
-import LandingPage from './js/LandingPage'; // Import LandingPage
+import LoginPage from './js/LoginPage';
+import LandingPage from './js/LandingPage'; 
+import SignUpPage from './js/SignUpPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LoginPage />} /> {/* Default route (LoginPage) */}
           <Route path="/landing" element={<LandingPage />} /> {/* LandingPage route */}
+          <Route path="/signup" element={<SignUpPage />} />
         </Routes>
       </div>
     </Router>

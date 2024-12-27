@@ -145,6 +145,11 @@
   }
   
   /* Google Icon Styling */
+  .google-icon {
+    width: 70px;
+    height: 24px;
+    margin-right: 8px;
+  }
   
   /* Login Options Text */
   .login-options p {
@@ -219,6 +224,11 @@
   
     .login-button, .google-login-button {
       font-size: 0.9rem;
+    }
+  
+    .google-icon {
+      width: 20px;
+      height: 20px;
     }
   }
   
