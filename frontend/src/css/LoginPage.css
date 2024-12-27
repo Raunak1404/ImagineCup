@@ -1,0 +1,224 @@
+/* General Layout */
+.login-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f0ec;
+    overflow: hidden;
+  }
+  
+  /* Left Panel for Image */
+  .left-panel {
+    flex: 1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  /* Right Panel for the Login Form */
+  .right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f1e1dc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* Login Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .login-form input {
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .login-form input:focus {
+    border-color: #5b8095;
+    box-shadow: 0 0 8px rgba(91, 128, 149, 0.3);
+    outline: none;
+  }
+  
+  /* Remember Me and Forgot Password Section */
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Forgot Password Button Styling */
+  .forgot-password-link {
+    background: none;
+    border: none;
+    color: #5b8095;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    text-decoration: underline;
+    outline: none;
+  }
+  
+  .forgot-password-link:hover {
+    color: #3b6070;
+  }
+  
+  /* Login Button Style */
+  .login-button {
+    padding: 14px;
+    background-color: #5b8095;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-button:hover {
+    background-color: #3b6070;
+    transform: translateY(-2px);
+  }
+  
+  /* Google Login Button */
+  .google-login-button {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-login-button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Google Icon Styling */
+  
+  /* Login Options Text */
+  .login-options p {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+  }
+  
+  /* Links Styling */
+  a {
+    color: #5b8095;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Loading Indicator */
+  .loading-indicator {
+    font-size: 1.5rem;
+    color: #5b8095;
+    text-align: center;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #d9534f;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .left-panel {
+      height: 40vh;
+      border-radius: 0;
+    }
+  
+    .right-panel {
+      height: 60vh;
+      border-radius: 0;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .login-form input {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
+  
+    .login-button, .google-login-button {
+      font-size: 0.9rem;
+    }
+  }
+  
